@@ -1,0 +1,7 @@
+<%= form_for (@sub) do |f| %>
+    <%= f.label "E-mail" %><br>
+<%= f.email_field :email, placeholder: "E-mail" %><br>
+    <%= f.label "Data urodzenia" %><br>
+<%= f.date_select :birth, use_short_month: true, start_year: 1920 %><br>
+    <%= f.submit "Zapisz", class: 'btn btn-primary' %>
+<% end %>
